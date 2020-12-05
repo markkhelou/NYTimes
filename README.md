@@ -1,4 +1,4 @@
-New York Times
+## New York Times
 Most Popular Articles Viewer
 
 New York Times is an iOS mobile application built using swift 4 using Model View Controller (MVC) architectural pattern. It contains no dependencies, all APIs are handled using a built in library called SundeedAPIRequester, the latter is using the native URLSession.
