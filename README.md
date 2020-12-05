@@ -1,5 +1,4 @@
 ## New York Times
-Most Popular Articles Viewer
 
 This new york application gets data from the API and fills this data in a table view controller which is divided to cells 
 and in each each cell has details about the articles including picture and other data. its build using Model-View-ViewModel (MVVM) architectural pattern.
