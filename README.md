@@ -14,6 +14,6 @@ This text you see here is actually written in Markdown! To get a feel for Markdo
 Download the application from github repository and open it using XCode
 
 ## Todos
-Write MORE Tests
-Add left side menu to let the user change the sections
-Add three dots functionality
+Write MORE Tests&nbsp;
+Add left side menu to let the user change the sections&nbsp;
+Add three dots functionality&nbsp;
