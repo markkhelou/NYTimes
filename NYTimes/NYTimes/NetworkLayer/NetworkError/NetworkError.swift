@@ -1,8 +1,8 @@
 //
-//  NetworkError.swift
+//  File.swift
 //  NYTimes
 //
-//  Created by marc helou on 12/7/20.
+//  Created by marc helou on 12/5/20.
 //  Copyright © 2020 marc helou. All rights reserved.
 //
 
