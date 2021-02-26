@@ -3,3 +3,7 @@
 "error.undefined" = "Something went wrong, please try again later";
 "search" = "Search";
 "cancel" = "Cancel";
+"noResults" = "No results found";
+"networkError.unknown" = "Oops Something Went Wrong";
+"error.wrongURLFormat" = "Wrong URL Format";
+"error.notCodable" = "We could not decode the response";

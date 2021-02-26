@@ -7,7 +7,20 @@
 		<key>NYTimes.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9766A532257A758300638A3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9766A5DF257BA1E500638A3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
