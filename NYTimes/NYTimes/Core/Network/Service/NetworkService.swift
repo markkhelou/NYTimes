@@ -70,43 +70,6 @@ public class NetworkService: NetworkServiceProtocol {
         return try JSONDecoder().decode(T.self, from: data)
     }
     
-//    func request<Response: Codable>() -> Promise<Response> {
-//        Promise { (fulfill, reject) in
-//            do {
-//                let request = try self.buildRequest()
-//                URLSession.shared.dataTask(with: request) { (data, response, error) in
-//                    if let error = error {
-//                        reject(NetworkError.error(error.localizedDescription))
-//                        return
-//                    }
-//                    guard let httpResponse = response as? HTTPURLResponse,
-//                        let data = data else {
-//                            reject(NetworkError.unknown)
-//                            return
-//                    }
-//                    if (200...299).contains(httpResponse.statusCode) {
-//                        do {
-//                            let body: Response = try self.decode(data)
-//                            fulfill(body)
-//                        } catch {
-//                            log(String(data: data, encoding: .utf8) ?? "")
-//                            reject(NetworkError.notCodable)
-//                        }
-//                    } else {
-//                        do {
-//                            let body: ServerError = try self.decode(data)
-//                            reject(NetworkError.error(body.fault.faultstring))
-//                        } catch {
-//                            reject(NetworkError.notCodable)
-//                        }
-//                    }
-//                }.resume()
-//            } catch {
-//                reject(NetworkError.error(error.localizedDescription))
-//            }
-//        }
-//    }
-    
     func request<Response: Codable>() -> Future<Response, NetworkError> {
         Future { [weak self] promise in
             do {

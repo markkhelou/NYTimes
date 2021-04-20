@@ -16,7 +16,7 @@ class ApplicationCoordinator: BaseCoordinator {
     
     init(window: UIWindow) {
         self.window = window
-        super.init()
+        super.init(navigationController: nil)
     }
 
     /// Creates all necessary dependencies and starts the flow

@@ -11,11 +11,6 @@ import UIKit
 import Resolver
 
 class ArticlesCoordinator: BaseCoordinator {
-    
-    init(navigationController: UINavigationController) {
-        super.init()
-        self.navigationController = navigationController
-    }
 
     override func start() {
         let viewController = ArticlesListViewController(coordinator: self, viewModel: Resolver.resolve())

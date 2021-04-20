@@ -9,6 +9,6 @@
 import Foundation
 
 struct ApiConstants {
-    static let apiKey = "QP5J5EfGIo2SulKxqdHNBS3LcmVPG5lo"
+    static let apiKey = (Bundle.main.object(forInfoDictionaryKey: "API_KEY") as? String) ?? ""
     static let baseUrl = "API_BASE_URL"
 }

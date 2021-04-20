@@ -39,7 +39,6 @@
 		9780EB3A25E9188100683941 /* MockArticleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9780EB3925E9188100683941 /* MockArticleRepository.swift */; };
 		9780EB3E25E920AB00683941 /* ArticlesListViewModelShould.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9780EB3D25E920AB00683941 /* ArticlesListViewModelShould.swift */; };
 		9780EB4225E920FE00683941 /* MockArticlesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9780EB4125E920FE00683941 /* MockArticlesUseCase.swift */; };
-		9780EB4625E9376400683941 /* ArticlesListViewControllerShould.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9780EB4525E9376400683941 /* ArticlesListViewControllerShould.swift */; };
 		978243A825E5114200CE8130 /* ArticlesEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978243A725E5114200CE8130 /* ArticlesEndPoint.swift */; };
 		978243C125E519B000CE8130 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978243BE25E519AF00CE8130 /* NetworkServiceProtocol.swift */; };
 		978243C225E519B000CE8130 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978243BF25E519AF00CE8130 /* NetworkService.swift */; };
@@ -111,7 +110,6 @@
 		9780EB3925E9188100683941 /* MockArticleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticleRepository.swift; sourceTree = "<group>"; };
 		9780EB3D25E920AB00683941 /* ArticlesListViewModelShould.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListViewModelShould.swift; sourceTree = "<group>"; };
 		9780EB4125E920FE00683941 /* MockArticlesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockArticlesUseCase.swift; sourceTree = "<group>"; };
-		9780EB4525E9376400683941 /* ArticlesListViewControllerShould.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesListViewControllerShould.swift; sourceTree = "<group>"; };
 		9782438F25E50D5B00CE8130 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		9782439025E50D5B00CE8130 /* Development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		978243A725E5114200CE8130 /* ArticlesEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesEndPoint.swift; sourceTree = "<group>"; };
@@ -621,7 +619,6 @@
 				9780EB2825E9149400683941 /* ArticlesListRepositoryShould.swift */,
 				9780EB3525E9183A00683941 /* ArticlesListUseCaseShould.swift */,
 				9780EB3D25E920AB00683941 /* ArticlesListViewModelShould.swift */,
-				9780EB4525E9376400683941 /* ArticlesListViewControllerShould.swift */,
 			);
 			path = Articleslist;
 			sourceTree = "<group>";
@@ -835,7 +832,6 @@
 				9780EB3A25E9188100683941 /* MockArticleRepository.swift in Sources */,
 				9780EB1525E912C900683941 /* ArticleModel.swift in Sources */,
 				97F7B0E425E669D8001C7998 /* ArticlesListRemoteShould.swift in Sources */,
-				9780EB4625E9376400683941 /* ArticlesListViewControllerShould.swift in Sources */,
 				9780EB2925E9149400683941 /* ArticlesListRepositoryShould.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

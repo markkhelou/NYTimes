@@ -69,7 +69,7 @@ class ArticlesListViewController: BaseViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "common/search"), style: .plain, target: self, action: #selector(searchPressed))
     }
     
-    @objc func searchPressed() {
+    @objc private func searchPressed() {
         coordinator?.showSearchAlert { [weak self] searchText in
             self?.viewModel.search(for: searchText)
         }
@@ -84,17 +84,16 @@ class ArticlesListViewController: BaseViewController {
         tableView.addSubview(refreshControl)
     }
     
-    @objc func refresh() {
+    @objc private func refresh() {
         viewModel.requestArticles()
     }
     
-    func articlePressed(at index: Int) {
-        
+    private func articlePressed(at index: Int) {
         let model = articlesList[index]
         coordinator?.showDetails(for: model)
     }
     
-    func showAlert(title: String?, message: String?) {
+    private func showAlert(title: String?, message: String?) {
         coordinator?.showAlert(title: title, message: message)
     }
 }

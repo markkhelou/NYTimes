@@ -1,1 +1,2 @@
 API_BASE_URL = http:/$()/api.nytimes.com
+API_KEY = QP5J5EfGIo2SulKxqdHNBS3LcmVPG5lo

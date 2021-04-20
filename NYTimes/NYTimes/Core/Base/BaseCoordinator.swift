@@ -10,7 +10,7 @@ import UIKit
 
 /// A `Coordinator` takes responsibility about coordinating view controllers and driving the flow in the application.
 protocol Coordinator: class {
-
+    
     var childCoordinators: [Coordinator] { get set }
     var navigationController: UINavigationController? { get set }
     var parentCoordinator: Coordinator? { get set }
@@ -18,7 +18,6 @@ protocol Coordinator: class {
     
     /// Stars the flow
     func start()
-    
 }
 
 class BaseCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
@@ -28,10 +27,10 @@ class BaseCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     weak var parentCoordinator: Coordinator?
     weak var rootViewController: UIViewController?
     
-    override init() {
+    init(navigationController: UINavigationController?) {
+        self.navigationController = navigationController
         super.init()
-        navigationController = UINavigationController()
-        navigationController?.delegate = self
+        self.navigationController?.delegate = self
     }
     
     func start() { fatalError("Start method must be implemented") }
@@ -44,13 +43,21 @@ class BaseCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
         }
         
         if fromViewController == self.rootViewController {
-            didFinish()
+            finish()
         }
     }
     
-    func didFinish() {
-        if let index = self.parentCoordinator?.childCoordinators.firstIndex(where: { $0 === self }) {
-            self.parentCoordinator?.childCoordinators.remove(at: index)
+    func finish() {
+        parentCoordinator?.childCoordinators.removeAll { $0 === self }
+    }
+    
+    func dismiss(animated: Bool = true) {
+        navigationController?.dismiss(animated: animated) {
+            self.finish()
         }
+    }
+    
+    deinit {
+        print("deinit: \(classForCoder)")
     }
 }
