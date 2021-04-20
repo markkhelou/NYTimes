@@ -1,7 +1,7 @@
 ## New York Times
 
 This new york application gets data from the API and fills this data in a table view controller which is divided to cells 
-and in each each cell has details about the articles including picture and other data. its build using Model-View-ViewModel (MVVM) architectural pattern.
+and in each each cell has details about the articles including picture and other data. its build using Model-View-ViewModel (MVVM) with clean architecture.
 
 ## Testing
 NYTimesTests is created to test all the JSON parsing and object mapping and some other fuctionality.  
